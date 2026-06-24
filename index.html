@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Álbum estilo Spotify</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <h1>Playlist Compartilhada 2026</h1>
+
+<h2>Enzo</h2>
+    <div class="album">
+        <div class="card">
+            <div class="musica" onclick="tocarMusica(this)">
+                <img src="imagens/guns_roses.jpeg" alt="Guns Roses Sweet Child O' Mine" width="200" height="=200">
+                <audio controls src="musicas/enzo/Guns_Roses.mp3"></audio>
+                <div class="play">▶</div>
+            </div>
+            <div class="musica" onclick="tocarMusica(this)">
+                <img src="imagens/babydoll.jpeg" alt="Baby Doll" width="200" height="=200">
+                <audio controls src="musicas/enzo/BabyDoll.mp3"></audio>
+                <div class="play">▶</div>
+            </div>
+            <div class="musica" onclick="tocarMusica(this)">
+                <img src="imagens/Samurai.jpeg" alt="Samurai"width="200" height="=200" >
+                <audio controls src="musicas/enzo/Samurai_Djavan.mp3"></audio>
+                <div class="play">▶</div>
+            </div>       
+        </div>
+    </div>
+<h2>Jeremias</h2>
+    <div class="album">
+    
+        <div class="card">
+            <div class="musica" onclick="tocarMusica(this)">
+                <img src="imagens/Aquarela.jpeg" alt="Aquarela" width="200" height="200">
+                <audio controls src="musicas/jeremias/aquarela.mp3"></audio>
+                <div class="play">▶</div>
+            </div>
+
+            <div class="musica" onclick="tocarMusica(this)">
+                <img src="imagens/Globo.jpeg" alt="Vinheta Globo" width="200" height="200">
+                <audio controls src="musicas/jeremias/myway.mp3"></audio>
+                <div class="play">▶</div>
+            </div>
+
+            <div class="musica" onclick="tocarMusica(this)">
+                <img src="imagens/capa_do_Album_MyWay.jpg" alt="My Way" width="200" height="200">
+                <audio controls src="musicas/jeremias/VinhetaDaGlobo.mp3"></audio>
+                <div class="play">▶</div>
+            </div>
+        </div>
+    </div>
+<h2>Kaue</h2>
+    <div class="album">
+        <div class="card">
+            <div class="musica" onclick="tocarMusica(this)">
+                <img src="imagens/capa_do_Album_ChampagnePoetry.jpg" alt="Champagne Poetry" width="200" height="200">
+                <audio controls src="musicas/kaue/chapagne_poetry.mp3"></audio>
+                <div class="play">▶</div>
+            </div>
+
+            <div class="musica" onclick="tocarMusica(this)">
+                <img src="imagens/capa_do_album_ToosieSlide.jpg" alt="Toosie Slide" width="200" height="200">
+                <audio controls src="musicas/kaue/toosieslide.mp3"></audio>
+                <div class="play">▶</div>
+            </div>
+
+            <div class="musica" onclick="tocarMusica(this)">
+                <img src="imagens/capa_do_Album_ChampagnePoetry.jpg" alt="Love All" width="200" height="200">
+                <audio controls src="musicas/kaue/love_all.mp3"></audio>
+                <div class="play">▶</div>
+            </div>
+        </div>
+    </div>
+<h2>Raphael</h2>
+    <div class="album">
+        <div class="card">
+            <div class="musica" onclick="tocarMusica(this)">
+                <img src="imagens/A_Danada_Me_Ligando.jpeg" alt="A Danada Me Ligando"  width="200" height="200">
+                <audio controls src="musicas/raphael/a_danada_me_ligando.mp3"></audio>
+                <div class="play">▶</div>
+        </div>
+
+            <div class="musica" onclick="tocarMusica(this)">
+                <img src="imagens/AltaTecnologia.jpeg" alt="AltaTecnologia"  width="200" height="200">
+                <audio controls src="musicas/raphael/alteTecnologia.mp3"></audio>
+                <div class="play">▶</div>
+            </div>
+
+            <div class="musica" onclick="tocarMusica(this)">
+                <img src="imagens/NadsonFerinha.jpeg" alt="Posta Ai"  width="200" height="200">
+                <audio controls src="musicas/raphael/nadson_ferinha.mp3"></audio>
+                <div class="play">▶</div>
+            </div>
+    </div>
+    </div>
+
+    <script>
+
+    function tocarMusica(musica) {
+    const audio = musica.querySelector('audio');
+    const todasAsMusicas = document.querySelectorAll('audio');
+    todasAsMusicas.forEach(m => {
+        if (m !== audio) m.pause();
+    });
+
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
+}
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
