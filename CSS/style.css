@@ -1,0 +1,107 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.album {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.album img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.album img:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    text-align: center;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 por linha */
+    gap: 10px;
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+.card:hover {
+    background-color: #282828;
+    transform: scale(1.05);
+}
+
+.card audio{
+    
+
+
+
+
+
+
+
+}
+
+.musica {
+    position: relative;
+    cursor: pointer;
+}
+
+.musica img{
+    width: 100%;
+    display: block;
+}
+.play {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  font-size: 30px;
+  color: white;
+  background: rgba(0,0,0,0.6);
+  border-radius: 50%;
+  padding: 10px 14px;
+  opacity: 0; /* começa invisível */
+  transition: 0.3s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  font-size: 30px;
+  color: white;
+  background: rgba(0,0,0,0.6);
+  border-radius: 50%;
+  padding: 10px 14px;
+  opacity: 0; /* começa invisível */
+  transition: 0.3s;
+}
+.musica:hover .play{
+    opacity: 1;
+}
